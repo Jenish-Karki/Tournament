@@ -1,0 +1,313 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+ body{
+    background-color:#E276FC;
+    }
+     #body{
+       transition: background-color 0.3s ease-in-out;
+     }
+    
+  
+    .bodyActive{
+    background-color:rgba(65, 63, 64, 0.37);
+    user-select: none;
+    }
+    
+    
+    
+
+
+/* create game account---->>>>>>>>>START */
+ h2{
+    margin-left: 2rem;
+   margin-top: 10px;
+ 
+ }
+  #form{
+    margin-left:3rem;
+ margin-top: 2rem;
+    
+  }
+ .inputs-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f0f0f0;
+    z-index: 1;
+    position: relative;
+
+ }
+ .input-content{
+ height:400px;
+ width: 700px;
+ background-color: #28282d;
+ color: #fff;
+ position: relative;
+ }
+ 
+ #showdropDown{
+ font-size: 1.4rem;
+ cursor: pointer;
+ position: absolute;
+ right: 100px;
+ top: 125px;
+ color: #000;
+ }
+ #hidedropDown{
+    font-size: 1.4rem;
+    cursor: pointer;
+    position: absolute;
+    right: 100px;
+    top: 125px;
+    color: #000;
+    display: none;
+ }
+ input[type="text"]{
+    font-size: 16px;
+    padding-left: 20px;
+ }
+ #dropDown{
+    position: absolute;
+     margin-top: 1rem;
+     width: 300px;
+     background-color: #fff;
+     color: #000;
+     padding: 10px;
+     display: none;
+     z-index: 100;
+ }
+ .freefire{
+    margin-bottom: 1rem;
+    cursor: pointer;
+ }
+ .pubg{
+    margin-top: 1rem;
+    cursor: pointer;
+ }
+ 
+ .inputforGame{
+   height: 33px;
+   width:600px;
+   margin-top: 2rem;
+   outline: none;
+   border: none;
+   background-color:#fff;
+   z-index: 100;
+   transition: 0.3s ease-in-out,
+   border-color 0.3s ease-in-out;
+   border-radius: 5px;
+   margin-top: 3rem;
+ }
+ .input-for-in-game-user{
+    height: 33px;
+    width:600px;
+    margin-top: 2rem;
+    outline: none;
+    border: none;
+    background-color:#fff;
+    z-index: 100;
+    border-radius: 5px;
+    margin-top: 3rem;
+ }
+
+ #gameUserLabel{
+    transition: 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+ }
+ 
+ .input-for-in-game-user-Active{
+    border: 3px solid tomato;
+ }
+ .inputforfileActive{
+    border: 3px solid tomato;
+ }
+
+ .labelforfileActive{
+    position: absolute;
+    top: 264px;
+    left: 60px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
+    background-color: #f0f0f0;
+    z-index: 1;
+    border-left:3px solid  tomato;
+    border-right:3px solid  tomato;
+    border-bottom: 3px solid #fff;
+    letter-spacing: 1px;
+ }
+ .label-for-in-game-user{
+    position: absolute;
+    top: 208px;
+    left: 70px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    background-color: #f0f0f0;
+    z-index: 1;
+ }
+ .InGamelabelActive{
+    position: absolute;
+    top: 176px;
+    left: 60px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
+    background-color: #f0f0f0;
+    z-index: 1;
+    border-left:3px solid tomato;
+    border-right:3px solid  tomato;
+    border-bottom: 6px solid #fff;
+    letter-spacing: 1px;
+ }
+ 
+ 
+ .inputforGameActive{
+    border: 3px solid tomato;
+ }
+ .labelforGame{
+    position: absolute;
+    top: 124px;
+    left: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    transition: 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+ }
+ 
+ .labelforGameActive{
+    position: absolute;
+    top: 92px;
+    left: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    background-color: #f0f0f0;
+    border-left:3px solid  tomato;
+    border-right:3px solid  tomato;
+    border-bottom: 6px solid #fff;
+    z-index: 1;
+    letter-spacing: 1px;
+ }
+ 
+ 
+ 
+ #freefireBox{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ cursor: pointer;
+ }
+ #pubgBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    }
+ #checkfreeFire{
+    margin-top: -7px;
+    display:none;
+ }
+ #checkPubg{
+ margin-top: 1rem;
+ display: none;
+ }
+ 
+ .createacc{
+    outline: none;
+    margin-top: 2rem;
+    border: none;
+    height: 30px;
+    width: 165px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 20px;
+ }
+ .backBtn{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    margin: 1rem;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+ }
+ .backBtn:hover{
+    background-color: #000;
+    color: #f0f0f0;
+    transform: translateY(-5px);
+ }
+ .inputforfile{
+    height: 33px;
+    width:600px;
+    margin-top: 2rem;
+    outline: none;
+    border: none;
+    background-color:#fff;
+    z-index: 100;
+    border-radius: 5px;
+    margin-top: 3rem;
+ }
+ #fileUploadBtn{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    height: 20px;
+    width: 100px;
+    margin: 1rem;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    left: 40px;
+    top: 270px;
+ }
+ #fileUploadBtn:hover{
+    background-color: #000;
+    color: #f0f0f0;
+    transform: translateY(3px);
+ }
+ 
+  /* create game account-->>>>>>>>>END */
+ 
+ 
+  
+  /* responsiveness>>>>>>>>>>..start */
+ 
+  @media screen and (max-width: 869px){
+    #form{
+       margin-left: 2rem;
+    }
+    #showdropDown{
+      right: 65px;
+    }
+    #hidedropDown{
+      right: 65px;
+    }
+    .input-content{
+      width: 80%;
+    }
+    .inputforGame{
+      width:90%;
+    }
+    .input-for-in-game-user{
+        width:90%;
+    }
+    .inputforuid{
+       width:90%;
+    } 
+    .inputforfile{
+        width: 90%;
+    }
+    #dropDown{
+       width: 200px;
+    }
+   }
+      
+ 

@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+body{
+    background-color:#F2D7D9;
+}
+#form{
+    height: 100%;
+    width: 100%;
+}
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+.form-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.tour-name{
+    margin: 1rem;
+}
+.org-name{
+    margin: 1rem;
+}
+.required-text{
+    color: red;
+    padding-left: 1rem;
+
+}
+.box-heading{
+    padding: 15px;
+}
+input[type="text"]{
+    letter-spacing: 1px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.input-feild{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    margin-top: 1.5rem; 
+    border-bottom: 2px solid #000;
+    width: 270px;
+    background-color: transparent;
+    transform: translateY(-10px);
+    transition: 0.3s ease-in-out,
+    border-bottom-color 0.4s ease-in-out;
+}
+.inputtransform1{
+    transform: translateY(0px);
+    border-bottom-color:tomato;
+
+}
+
+.alert{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    display: none;
+}
+.fa-circle-exclamation{
+    color:tomato;
+    margin-left: 20px;
+}
+.alerttext{
+    margin-left: 10px;
+}
+.head-icon{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+   width: 100%;
+}
+
+/*Boxes section>>>>>>>>>>>>>>>Start */
+
+.squad{
+    height: 50px;
+    width:620px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color:#fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 1.4rem;
+    transition: .3s ease-in-out;
+    } 
+    .squadActive{
+        width:620px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        background-color:#fff;
+        border-radius: 10px;
+        height: calc(150px + 10px);
+        } 
+    .squad-box{
+        display: flex;
+        align-items:flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: 2rem;
+        height: 50px;
+        width:310px;
+        padding-left: 1rem;
+         padding-right: 1rem;
+        background-color:#fff;
+         border-radius: 10px;
+         overflow: hidden;
+         transition: .3s ease-in-out;
+         margin-left: 1rem;
+    }
+.boxOneActive{
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 2rem;
+    width:310px;
+    padding-left: 1rem;
+     padding-right: 1rem;
+    background-color:#fff;
+     border-radius: 10px;
+    height: calc(150px + 10px);
+}
+
+#showInput{
+    font-size: 1.6em;
+    cursor: pointer;
+}
+#hideInput{
+    font-size: 1.6em;
+    display: none;
+    cursor: pointer;
+}
+.flex-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+.buttons-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
+    height: 120px;
+}
+
+/* Boxes section>>>>>>>>>>>>>>>End */
+
+
+
+
+/* submit////login>>>>>>>>>Buttons>>>>start*/
+
+
+.submitbtn{
+    all: unset;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+.submitbtn::after,
+.submitbtn::before {
+    content: '';
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   z-index: -99999;
+   transition: all .4s;
+}
+
+.submitbtn::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+
+.submitbtn::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.submitbtn:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.submitbtn:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.submitbtn:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+
+
+
+
+
+
+
+
+.clear {
+   all: unset;
+   width: 100px;
+   height: 30px;
+   font-size: 16px;
+   background: transparent;
+   border: none;
+   position: relative;
+   color: #f0f0f0;
+   cursor: pointer;
+   z-index: 1;
+   padding: 10px 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   white-space: nowrap;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+ }
+ 
+.clear::after,
+ .clear::before {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   z-index: -99999;
+   transition: all .4s;
+ }
+ 
+ .clear::before {
+   transform: translate(0%, 0%);
+   width: 100%;
+   height: 100%;
+   background: #28282d;
+   border-radius: 10px;
+ }
+ .clear::after {
+   transform: translate(10px, 10px);
+   width: 35px;
+   height: 35px;
+   background: #ffffff15;
+   backdrop-filter: blur(5px);
+   -webkit-backdrop-filter: blur(5px);
+   border-radius: 50px;
+ }
+ 
+.clear:hover::before {
+   transform: translate(5%, 20%);
+   width: 110%;
+   height: 110%;
+ }
+ 
+ .clear:hover::after {
+   border-radius: 10px;
+   transform: translate(0, 0);
+   width: 100%;
+   height: 100%;
+ }
+ 
+.clear:active::after {
+   transition: 0s;
+   transform: translate(0, 5%);
+ }
+ 
+
+
+
+
+/*submit////login>>>>>>Buttons>>>>end*/
+
+
+
+
+/* Responsiveness>>>>>>>>>>>>>>>Start */
+
+@media screen and (max-width:665px){
+
+
+
+    .required-text{
+        padding-bottom: 1rem;
+    }
+    .squad-box{
+        display: flex;
+        align-items:flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: 2rem;
+        height: 50px;
+        width:310px;
+        padding-left: 1rem;
+         padding-right: 1rem;
+        background-color:#fff;
+         border-radius: 10px;
+         overflow: hidden;
+         transition: .2s ease-in-out;
+         margin-left: 0px;
+    }
+    .boxOneActive{
+        display: flex;
+        align-items:flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: 2rem;
+        width:310px;
+        padding-left: 1rem;
+         padding-right: 1rem;
+        background-color:#fff;
+         border-radius: 10px;
+        height: calc(150px + 10px);
+    }
+    .flex-wrapper{
+        flex-wrap: wrap;
+    }
+    .squad{
+        width: 90%;
+    }
+
+}
+
+
+
+/* Responsiveness>>>>>>>End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

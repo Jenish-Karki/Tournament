@@ -1,0 +1,178 @@
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+ }
+
+ /* .left--slider>>>>>>>>>START */
+body{
+background-color:#E276FC;
+}
+ #body{
+   transition: background-color 0.3s ease-in-out;
+ }
+
+ .slider-container{
+    position: relative;
+ }
+ .ahref-style{
+    text-decoration: none;
+    color: #f0f0f0;
+    padding-left: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: font-size 0.4s;
+    margin-top: 3rem;
+ }
+ .ahref-style:hover{
+    font-size: 1.3em;
+ }
+ .ahref-style::after{
+    content: "";
+    display: block;
+    border-bottom: 3px solid tomato;
+    transform: translateX(0%) scale(0);
+    transition: 0.4s;
+    
+ }
+ .ahref-style:hover:after{
+    content: "";
+    display: block;
+    border-bottom: 3px solid tomato;
+    transform: translateX(0%) scale(1);
+ }
+.left-slider{
+   height: 300px;
+   width: 280px;
+   background-color: #28282d;
+   color: #f0f0f0;
+    position: fixed;
+    top: 100px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 0.3s ease-in-out;
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+    padding: 0px 30px;
+    transform: translateX(-220px);
+    z-index: 1000;
+}
+.sliderActive{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transform: translateX(0px);
+    z-index: 1000;
+}
+.icons{
+   position: absolute;
+   right: 0px;
+   top: 120px;
+
+}
+ #bringSlider{
+    position: absolute;
+    color: #fff;
+    font-size: 2.2rem;
+    padding-right: 10px;
+    cursor: pointer;
+    right: 0px;
+ }
+
+ #hideSlider{
+    color: #fff;
+    font-size: 2.2rem;
+    padding-right: 10px;
+    cursor: pointer;
+    display: none;
+ }
+.hrefs{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.bodyActive{
+background-color:rgba(65, 63, 64, 0.37);
+user-select: none;
+}
+
+
+
+ /* .left--slider>>>>>>>>>END */
+
+
+
+
+ /*Teams section>>>>>>>>>START */
+ .teams-container{
+   margin-top:2rem;
+   height: 100vh;
+
+ }
+.teams-header{
+display: flex;
+align-items: center;
+justify-content: space-around;
+margin-top: 3rem;
+width: 100%;
+height: 50px;
+border-radius: 30px;
+background-color: #28282d;
+color: #f0f0f0;
+}
+.headings{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.createBtn{
+   cursor: pointer;
+   outline: none;
+   border: none;
+   height: 30px;
+   width: 170px;
+   background-color: #28282d;
+   color: #f0f0f0;
+   border-radius: 10px;
+   transition: outline 0.3s ease-in-out,
+   outline-offset 0.4s ease-in-out;
+}
+.createBtn:hover{
+   outline: 3px solid tomato;
+   outline-offset: 5px;
+}
+
+
+ /* Teams section>>>>>>>>>end */
+
+
+
+
+
+
+
+ /* responsiveness>>>>>>>>>>..start */
+
+ @media screen and (max-width: 869px){
+    #showdropDown{
+      right: 65px;
+    }
+    #hidedropDown{
+      right: 65px;
+    }
+    .input-content{
+      width: 80%;
+    }
+    .inputforGame{
+      width:90%;
+    }
+    .input-for-in-game-user{
+        width:90%;
+    }
+    .inputforuid{
+       width:90%;
+    } 
+
+
+   }

@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+ 
+ }
+ 
+ /*login-form-design --------START*/
+ body{
+      background-image:linear-gradient(to right, rgb(96, 56, 19), rgb(178, 159, 148)); 
+   
+ }
+ a{
+    text-decoration: none;
+    
+ }
+ .inputs{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+ }
+ .password-input{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+ }
+ .register-page{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+ }
+ #form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+ .register-container{
+     position: relative;
+     flex-direction: column;
+     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+     margin-top: 7rem;
+     height:auto;
+     width:400px;
+     border-radius: 20px;
+     
+ }
+ .register-heading{
+     text-align: center;
+     padding: 15px 20px;
+ }
+ .style{
+     background-color: black;
+     width: 100%;
+ }
+ 
+ .username{
+     outline: none;
+     border: none;
+     border-bottom: 5px solid #000;
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+     
+ }
+ .password{
+     outline: none;
+     border: none;
+     border-bottom: 5px solid #000;
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+  
+ }
+ .inputname{
+  
+        outline: none;
+        border: none;
+        border-bottom: 5px solid #000;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+     
+ 
+ }
+ #labelName{
+    position: absolute;
+    top: 263px;
+    left: 67px;
+    transition: 0.3s ease-in-out;
+    font-size: 17px;
+    letter-spacing: 1px;
+ }
+ .labelnameActive{
+    position: absolute;
+    transform: translateY(-29px);
+    left: 70px;
+    transition: fontsize 0.3s ease-in;
+    } 
+    
+ .inputs input{
+     height: 35px;
+     min-width:300px;
+     margin-top: 2rem;
+   
+ }
+  .inputName input{
+     height: 35px;
+     min-width:300px;
+     margin-top: 3rem;
+ }
+ 
+ .buttons{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     margin-top: 2rem;
+     gap: 1rem;
+     padding-bottom: 1rem;
+ }
+ input[type="text"]{
+     padding-left: 20px;
+     font-size: 15px;
+     font-weight: bold;
+ }
+ #labelUsername{
+   position: absolute;
+   top: 100px;
+   left: 67px;
+   transition: 0.3s ease-in-out;
+   font-size: 17px;
+   letter-spacing: 1px;
+ }
+
+ .labelusernameActive{
+ position: absolute;
+ transform: translateY(-29px);
+ left: 70px;
+ transition: fontsize 0.3s ease-in;
+ } 
+ 
+ 
+ .password-input{
+     margin-top: 3rem;
+ }
+ 
+ .password-input input{
+     height: 35px;
+     min-width:300px;
+ }
+ 
+ 
+ 
+ #labelPassword{
+     position: absolute;
+     top: 180px;
+     left: 67px;
+     transition: 0.3s ease-in-out;
+     font-size: 17px;
+     letter-spacing: 1px;
+   }
+   .labelpasswordActive{
+   position: absolute;
+   transform: translateY(-25px);
+   left: 70px;
+   font-size: 1.2em;
+   } 
+   
+ 
+ #submitBtn{
+ height: 40px;
+ width: 190px;
+ border-radius: 30px;
+ outline: none;
+ border: none;
+ background-color: blue;
+ color: #fff;
+ font-weight: bold;
+ cursor: pointer;
+ }
+ .signUp{
+     cursor: pointer;
+ }
+
+ .fa-facebook{
+     font-size: 25px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding-top: 5px;
+     color: blue;
+     width: 50px;
+ }
+ 
+ .fa-google{
+     font-size: 25px;
+     width: 50px;
+     color:orange;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding-top: 5px;
+ }
+ #boxOne{
+     height: 35px;
+     width: 80px;
+     background-color:#fff;
+     box-shadow: inset 0 0 5px #000;
+ }
+ #boxTwo{
+     height: 35px;
+     width: 80px;
+     background-color:#FFF;
+     box-shadow: inset 0 0 5px #000000;
+ }
+ .other-options{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 50%;
+     gap: 1rem;
+ }
+ /*login-form-design --------END*/
+
+ /*Responsiveness-design >>>>>>>START*/
+ @media screen and (max-width:550px){
+    .register-container{
+    width: 340px;
+    }
+    #labelUsername{
+        position: absolute;
+        top: 100px;
+        left: 40px;
+        transition: 0.3s ease-in-out;
+        font-size: 17px;
+        letter-spacing: 1px;
+      }
+    #labelPassword{
+        position: absolute;
+        top: 180px;
+        left: 40px;
+        transition: 0.3s ease-in-out;
+        font-size: 17px;
+        letter-spacing: 1px;
+      }
+      #labelName{
+        position: absolute;
+        top: 263px;
+        left: 40px;
+        transition: 0.3s ease-in-out;
+        font-size: 17px;
+        letter-spacing: 1px;
+      }
+}
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ /*Responsiveness-form-design <<<<<<<<END*/
+ 
+ 
+ 
+ 
+ 
